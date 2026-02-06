@@ -407,3 +407,45 @@ textarea:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
+
+/* Callouts / Toolboxes (used inside chapters) */
+.callout {
+    background: linear-gradient(135deg, #f0f9ff, #eef2ff);
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 12px;
+    padding: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.callout h4 {
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.callout p {
+    margin: 0 0 var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.callout ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.callout li {
+    margin: 0.35rem 0;
+}
+
+.callout .tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    background: rgba(99, 102, 241, 0.12);
+    border: 1px solid rgba(99, 102, 241, 0.18);
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    margin-right: 0.35rem;
+}
