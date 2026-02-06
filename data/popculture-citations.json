@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "title": "Pop Culture Citation Index",
+    "description": "Navigable index of pop culture references in Futuro Fortissimo",
+    "lastUpdated": "2026-02-06",
+    "categories": ["Dune", "Interstellar", "Squid Game", "Sci-Fi", "Other"]
+  },
+  "citations": [
+    {
+      "id": "dune-01",
+      "category": "Dune",
+      "quote": "Il messia non è ancora arrivato, ma Arrakis ha sempre una strategia.",
+      "context": "Metafora per la pazienza strategica nell'adozione tecnologica",
+      "chapter": "tecnologia",
+      "theme": "strategy",
+      "tags": ["desert", "strategy", "patience", "spice"]
+    },
+    {
+      "id": "dune-02",
+      "category": "Dune",
+      "quote": "Chi controlla la spezia, controlla l'universo.",
+      "context": "Paragone con chi controlla i dati nell'economia AI",
+      "chapter": "tecnologia",
+      "theme": "power",
+      "tags": ["data", "power", "economics"]
+    },
+    {
+      "id": "dune-03",
+      "category": "Dune",
+      "quote": "Devo essere in grado di sopravvivere senza le mie facoltà.",
+      "context": "Riflessione sulla dipendenza tecnologica",
+      "chapter": "societa",
+      "theme": "dependence",
+      "tags": ["autonomy", "technology-addiction"]
+    },
+    {
+      "id": "interstellar-01",
+      "category": "Interstellar",
+      "quote": "Non abbiamo scelto di venire qui, ma possiamo scegliere di restare.",
+      "context": "L'ineluttabilità del cambiamento climatico e le scelte che abbiamo",
+      "chapter": "natura",
+      "theme": "choice",
+      "tags": ["environment", "agency", "climate"]
+    },
+    {
+      "id": "interstellar-02",
+      "category": "Interstellar",
+      "quote": "L'amore è l'unica cosa che trascende tempo e spazio.",
+      "context": "L'AI può simulare conversazione, ma non può provare connessione emotiva",
+      "chapter": "societa",
+      "theme": "connection",
+      "tags": ["ai", "emotions", "humanity"]
+    },
+    {
+      "id": "interstellar-03",
+      "category": "Interstellar",
+      "quote": "Forse non siamo fatti per salvare il mondo. Siamo fatti per attraversarlo.",
+      "context": "L'ossessione per il miglioramento vs l'apprezzamento del viaggio",
+      "chapter": "natura",
+      "theme": "journey",
+      "tags": ["mindfulness", "progress"]
+    },
+    {
+      "id": "squidgame-01",
+      "category": "Squid Game",
+      "quote": "Giochi infantili per adulti disperati.",
+      "capitalism": "La gamification del lavoro e della produttività",
+      "chapter": "societa",
+      "theme": "capitalism",
+      "tags": ["work", "productivity", "gamification"]
+    },
+    {
+      "id": "squidgame-02",
+      "category": "Squid Game",
+      "quote": "In questo gioco, o giochi secondo le regole, o vieni eliminato.",
+      "context": "Le regole dell'economia dell'attenzione",
+      "chapter": "tecnologia",
+      "theme": "rules",
+      "tags": ["attention-economy", "platforms"]
+    },
+    {
+      "id": "squidgame-03",
+      "category": "Squid Game",
+      "quote": "Siamo tutti concorrenti. È il sistema a funzionare così.",
+      "context": "La competizione nell'economia degli agenti AI",
+      "chapter": "tecnologia",
+      "theme": "competition",
+      "tags": ["ai-agents", "competition"]
+    },
+    {
+      "id": "exponential-01",
+      "category": "Sci-Fi",
+      "quote": "Qualsiasi tecnologia sufficientemente avanzata è indistinguibile dalla magia.",
+      "context": "Cit. Arthur C. Clarke — L'AI come magia moderna",
+      "chapter": "tecnologia",
+      "theme": "technology",
+      "tags": ["magic", "ai", "advancement"]
+    },
+    {
+      "id": "haldane-01",
+      "category": "Sci-Fi",
+      "quote": "L'universo non solo è più strano di quanto supponiamo, ma più strano di quanto possiamo supporre.",
+      "context": "Cit. J.B.S. Haldane — L'impossibilità di predire il futuro dell'AI",
+      "chapter": "tecnologia",
+      "theme": "uncertainty",
+      "tags": ["prediction", "limits"]
+    },
+    {
+      "id": "asimov-01",
+      "category": "Sci-Fi",
+      "quote": "Non tocca a me decidere se continuare a costruire robot sempre più perfetti.",
+      "context": "Cit. Isaac Asimov — Le tre leggi della robotica e l'AI responsabile",
+      "chapter": "tecnologia",
+      "theme": "ethics",
+      "tags": ["ethics", "ai-safety", "responsibility"]
+    }
+  ]
+}
