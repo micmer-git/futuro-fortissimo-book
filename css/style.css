@@ -407,3 +407,33 @@ textarea:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
+
+/* Toolbox section */
+.toolbox {
+    background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    margin: var(--spacing-lg) 0;
+    border-left: 4px solid var(--accent-color);
+}
+
+.toolbox h4 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+.toolbox ul {
+    margin: var(--spacing-sm) 0;
+    padding-left: var(--spacing-md);
+}
+
+.toolbox li {
+    margin: var(--spacing-xs) 0;
+    line-height: 1.6;
+}
+
+.toolbox em {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
