@@ -161,6 +161,33 @@
         .nav-link.next {
             margin-left: auto;
         }
+
+        .editorial-meta,
+        .search-section {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+
+        .editorial-meta h4,
+        .search-section h4 {
+            margin-bottom: var(--spacing-xs);
+            color: var(--primary-color);
+        }
+
+        .editorial-meta ul,
+        .search-section ul {
+            margin: 0;
+            padding-left: var(--spacing-md);
+        }
+
+        .editorial-meta li,
+        .search-section li {
+            margin: var(--spacing-xs) 0;
+            line-height: 1.6;
+        }
         
         @media (max-width: 768px) {
             .chapter-title {
@@ -221,6 +248,25 @@
                 <li><a href="#fine-scarcita">La fine della scarsità intellettuale</a></li>
                 <li><a href="#futuro-gia-qui">Il futuro è già qui</a></li>
                 <li><a href="#pattern-corpus-ff">Pattern operativi dal corpus FF</a></li>
+            </ul>
+        </div>
+
+        <div class="editorial-meta">
+            <h4>🧾 Meta editoriale</h4>
+            <ul>
+                <li><strong>Ultimo aggiornamento:</strong> 2026-02-18 17:50 UTC</li>
+                <li><strong>Stima lettura:</strong> ~20 minuti</li>
+                <li><strong>Riferimenti:</strong> 24 ref</li>
+            </ul>
+        </div>
+
+        <div class="search-section">
+            <h4>🔎 Search</h4>
+            <ul>
+                <li>"watt-to-bit AI Conference Shanghai Wang Yu"</li>
+                <li>"AI agents productivity supervision feedback loops"</li>
+                <li>"FrontierMath level 4 benchmark interpretation"</li>
+                <li>"NVIDIA valuation versus GDP explanation"</li>
             </ul>
         </div>
 
@@ -464,6 +510,11 @@
 
         <p>Viviamo in un mondo iperconnesso, ma spesso più soli che mai. La tecnologia promette connessione, ma spesso produce isolamento. Promette accesso, ma spesso crea dipendenza. Promette libertà, ma spesso impone schemi.</p>
 
+        <div class="citation">
+            <div class="citation-ref">(📊 ff.112.1 — Attention scarcity come costo sistemico)</div>
+            <p>Il costo reale della connessione non è la bolletta dati: è la frammentazione dell’attenzione. Quando tutto compete per micro-secondi cognitivi, perdiamo continuità mentale, qualità decisionale e profondità relazionale. In questo senso, “disconnettere” a slot regolari non è un lusso: è manutenzione operativa.</p>
+        </div>
+
         <p>La vera domanda è: cosa stiamo connettendo? Se connettiamo persone a persone, il risultato è comunità. Se connettiamo persone a schermi, il risultato è alienazione. Se connettiamo persone a algoritmi, il risultato è manipolazione. La tecnologia è neutrale — il contesto non lo è.</p>
 
         <p>Il futuro richiede una tecnologia più umana, non un'umanità più tecnologica. Tecnologie che servono i valori umani, non che li sostituiscono. Strumenti che amplificano la dignità, non che la compromettono.</p>
@@ -538,18 +589,6 @@
         <p>Il futuro della tecnologia non è determinato — è democratico. Non è inevitabile — è intenzionale. Non è dato — è costruito. E noi siamo i costruttori.</p>
 
         <p>Il viaggio è appena iniziato. La mappa è incompleta. Ma la strada è sotto i nostri piedi, e ogni passo conta.</p>
-
-        <div class="toolbox">
-            <h4>📚 Fonti & spunti (note di ricerca)</h4>
-            <p><em>Sezione “grezza” per non perdere link e riferimenti; da ripulire/integrare in una revisione successiva.</em></p>
-            <ul>
-                <li><strong>OpenClaw</strong> — docs e repo: <a href="https://docs.openclaw.ai" target="_blank" rel="noopener">docs.openclaw.ai</a> · <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">github.com/openclaw/openclaw</a></li>
-                <li><strong>MCP (Model Context Protocol)</strong> — spec + ecosystem: <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener">modelcontextprotocol.io</a></li>
-                <li><strong>GitHub CLI</strong> — automazioni PR/issue: <a href="https://cli.github.com/" target="_blank" rel="noopener">cli.github.com</a></li>
-                <li><strong>Agents, tool-use, workflow</strong> — (placeholder) raccogli qui esempi reali + casi d’uso italiani</li>
-            </ul>
-            <p><em>Obiettivo: trasformare questi link in “pattern” ripetibili (es. “come costruire un agente personale” + checklist).</em></p>
-        </div>
 
         <div class="chapter-nav">
             <a href="/" class="nav-link">← Torna all'indice</a>
