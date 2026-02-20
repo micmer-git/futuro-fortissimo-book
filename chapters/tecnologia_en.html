@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 Technology — Futuro Fortissimo</title>
+    <meta name="description" content="Robotics, AI and the future of the mind: how artificial intelligence is redefining the human condition">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="artificial intelligence, robotics, technology, future, AI, innovation">
+    <meta name="author" content="Michele Merelli">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="🤖 Technology — Futuro Fortissimo">
+    <meta property="og:description" content="Robotics, AI and the future of the mind: how artificial intelligence is redefining the human condition">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://micmer.github.io/futuro-fortissimo-book/chapters/tecnologia_en.html">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="🤖 Technology — Futuro Fortissimo">
+    <meta name="twitter:description" content="Robotics, AI and the future of the mind: how artificial intelligence is redefining the human condition">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .chapter-header {
+            background: linear-gradient(135deg, #1e40af, #8b5cf6);
+            color: white;
+            padding: var(--spacing-xl) 0;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .chapter-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+
+        .chapter-title {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-sm);
+            text-align: center;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.25rem;
+            text-align: center;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto var(--spacing-lg);
+        }
+
+        .hook {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            margin: var(--spacing-lg) 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .hook strong {
+            display: block;
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.1rem;
+        }
+
+        .hook ul {
+            margin: 0;
+            padding-left: var(--spacing-md);
+        }
+
+        .hook li {
+            margin: var(--spacing-xs) 0;
+            line-height: 1.6;
+        }
+
+        .toc {
+            background: var(--bg-secondary);
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            margin: var(--spacing-lg) 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .toc h4 {
+            margin-bottom: var(--spacing-sm);
+            color: var(--primary-color);
+        }
+
+        .toc ul {
+            margin: 0;
+            padding-left: var(--spacing-md);
+        }
+
+        .toc li {
+            margin: var(--spacing-xs) 0;
+        }
+
+        .citation {
+            background: linear-gradient(135deg, #dbeafe, #e0e7ff);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            margin: var(--spacing-md) 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .citation-ref {
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-xs);
+            font-weight: 600;
+        }
+
+        .citation-ref a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .citation-ref a:hover {
+            text-decoration: underline;
+        }
+
+        .pullquote {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: var(--spacing-xl) var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+            border-top: 2px solid var(--border-color);
+            border-bottom: 2px solid var(--border-color);
+            color: var(--primary-color);
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .editorial-meta {
+            background: var(--bg-secondary);
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            margin: var(--spacing-lg) 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        .editorial-meta h4 { margin-bottom: var(--spacing-sm); color: var(--primary-color); }
+        .editorial-meta ul { margin: 0; padding-left: var(--spacing-md); }
+        .editorial-meta li { margin: var(--spacing-xs) 0; }
+
+        .search-section {
+            background: #f8fafc;
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            margin: var(--spacing-lg) 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        .search-section h4 { margin-bottom: var(--spacing-sm); color: var(--primary-color); }
+        .search-section ul { margin: 0; padding-left: var(--spacing-md); }
+        .search-section li { margin: var(--spacing-xs) 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95rem; }
+
+        .chapter-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-lg);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .nav-link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 600;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--bg-secondary);
+        }
+
+        .nav-link.next {
+            margin-left: auto;
+        }
+
+        .toolbox {
+            background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+            padding: var(--spacing-lg);
+            border-radius: 12px;
+            margin: var(--spacing-lg) 0;
+            border-left: 4px solid #16a34a;
+        }
+        .toolbox h4 { margin-bottom: var(--spacing-sm); color: #16a34a; }
+        .toolbox ul { margin: 0; padding-left: var(--spacing-md); }
+        .toolbox li { margin: var(--spacing-xs) 0; }
+
+        @media (max-width: 768px) {
+            .chapter-title {
+                font-size: 2.5rem;
+            }
+            .chapter-nav {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+            .nav-link.next {
+                margin-left: 0;
+            }
+        }
+
+        .toc a { color: inherit; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <div class="chapter-header">
+        <div class="chapter-container">
+            <h1 class="chapter-title">🤖 Technology</h1>
+            <p class="chapter-subtitle">Robotics, AI and the future of the mind: how artificial intelligence is redefining the human condition</p>
+        </div>
+    </div>
+
+    <div class="chapter-container">
+        <div class="hook">
+            <strong>🎼 Today we discuss:</strong>
+            <ul>
+                <li>How is work changing in the AI era?</li>
+                <li>What happens when robots become life companions?</li>
+                <li>Why is NVIDIA worth more than Switzerland?</li>
+                <li>What if AI becomes truly autonomous?</li>
+            </ul>
+        </div>
+
+        <div class="toc">
+            <h4>📚 Contents</h4>
+            <ul>
+                <li><a href="#end-of-work">The end of work as we know it</a></li>
+                <li><a href="#new-intelligence">The birth of a new form of intelligence</a></li>
+                <li><a href="#agents-openclaw">Agents that work while you sleep (OpenClaw)</a></li>
+                <li><a href="#energy-cost">The energy cost of the artificial mind</a></li>
+                <li><a href="#singularity-illusion">The singularity as optical illusion</a></li>
+                <li><a href="#chinese-efficiency">The Chinese efficiency race</a></li>
+                <li><a href="#humanoid-robots">Humanoid robots and artificial relationships</a></li>
+                <li><a href="#operational-robotics">From demo to factory: operational robotics</a></li>
+                <li><a href="#memory-bottleneck">The memory bottleneck</a></li>
+                <li><a href="#ai-music">AI that creates music (Suno and beyond)</a></li>
+                <li><a href="#digital-privacy">The end of digital privacy</a></li>
+                <li><a href="#cryptocurrency">Cryptocurrency and decentralization of power</a></li>
+                <li><a href="#reality-computing">Reality computing and the future of perception</a></li>
+                <li><a href="#creative-work">The future of creative work</a></li>
+                <li><a href="#ethics-governance">AI ethics and governance</a></li>
+                <li><a href="#democratization">The democratization of intelligence</a></li>
+            </ul>
+        </div>
+
+        <div class="editorial-meta">
+            <h4>🧾 Editorial metadata</h4>
+            <ul>
+                <li><strong>Last updated:</strong> 2026-02-20 17:00 UTC</li>
+                <li><strong>Reading time:</strong> ~28 minutes</li>
+                <li><strong>References:</strong> 42 ref</li>
+            </ul>
+        </div>
+
+        <p>Technology has never been just a tool — it has always been an extension of ourselves. From the wheel to the printing press, from the steam engine to electricity, every innovation has expanded our capabilities, redefined our boundaries, transformed our human condition. But never before has this process accelerated, amplified, and become visible in real time as it has today.</p>
+
+        <p>2025 marks a turning point. NVIDIA, a company that produces chips for artificial intelligence, is worth more than the entire Swiss economy. A single language model can simulate human conversations so realistic they fool even experts. Humanoid robots walk, talk, execute tasks. Cryptocurrencies decentralize financial power. Virtual reality becomes indistinguishable from physical reality.</p>
+
+        <p>This is no longer about adapting to change — it's about deciding which change we want. It's no longer enough to react — we must design. It's not enough to survive — we must thrive. Technology offers us choices that didn't exist before, but demands decisions we never had to make.</p>
+
+        <h3 id="end-of-work">The end of work as we know it</h3>
+
+        <p>If NVIDIA is worth more than Switzerland, something has profoundly changed. In 3 months, the company collected 57 billion dollars, earning 36, with a 75% margin. Numbers incomprehensible at human scale, but perfectly understandable for anyone observing the convergence between specialized hardware and artificial intelligence demand.</p>
+
+        <p>A company's valuation doesn't represent its GDP — it represents perceived theoretical value. And the market perceives that the future belongs to those who control the infrastructure of artificial intelligence. Not just the models, but the chips that power them. Not just AI, but the ability to make it work.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(<a href="https://fortissimo.substack.com/i/179548983/ff-svizzero-no-nvidia">🍫 ff.139.1 Swiss? No, NVIDIA</a>)</div>
+            <p>"In 3 months, NVIDIA collected 57 billion dollars (earning 36, with a 75% margin). Incomprehensible numbers. Valuation ≠ GDP. The first is perceived theoretical value, the second represents what a state physically produces in a year."</p>
+        </div>
+
+        <p>This has immediate consequences for work. As Reid Hoffman and Greg Beato argue in <em>Superagency</em>, AI is not just a tool: it amplifies human agency, allowing individuals and organizations to operate at a previously impossible scale. Economic agents with advanced sales, negotiation, and long-term planning capabilities can create a market of at least 1 trillion dollars — about 1% of global GDP. The online advertising market, already completely managed by algorithms, is worth 600 billion. The emerging economic automation market could be ten times larger.</p>
+
+        <p>But the real change isn't quantitative — it's qualitative. It's not about replacing human workers with more efficient machines. It's about redefining what "work," "value," and "production" mean. When a model can write code, create images, conduct research, analyze data, translate languages, the line between "human" and "automatic" becomes blurred.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(🔧 ff.22.1 — Work as identity)</div>
+            <p>Work isn't just income: it's structure, identity, rhythm. When automation erodes it, it's not just an activity that disappears — it's a piece of autobiography. The real problem isn't "what will we do," but "who will we be" when machines do most of the doing.</p>
+        </div>
+
+        <p>The future work won't be a sequence of repetitive tasks we can gradually automate. It will be a continuous negotiation between human and artificial capabilities. A dance between creativity, empathy, judgment and efficiency, precision, scalability.</p>
+
+        <p>Who will survive this transition? Probably not those who do current tasks best, but those who find new ways to create value. Those who collaborate with AI instead of competing against it. Those who offer what machines cannot: vision, meaning, human connection.</p>
+
+        <h3 id="new-intelligence">The birth of a new form of intelligence</h3>
+
+        <p>Gemini 3 represents the first true multimodal model. It not only understands text and images, but generates apps that integrate camera recognition, image creation, search and text-to-speech. Apps with tool-calling, capable of executing complex actions with simple commands.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(<a href="https://fortissimo.substack.com/i/179548983/ff-dove-la-mia-macchina-volante-in-gta">🍫 ff.139.3 Where's my flying car (in GTA 6?)</a>)</div>
+            <p>"Gemini 3 is more than a simple number update: it's the first true multimodal model. It generates apps that integrate camera recognition, image creation, search and text-to-speech. Apps with tool-calling, in short."</p>
+        </div>
+
+        <p>This is no longer assistance — it's collaboration. AI is no longer an application we use, but a partner that thinks with us. The distinction between "asking" and "telling" dissolves. Between "command" and "conversation" there's no longer a difference.</p>
+
+        <p>But there's a paradox. The more capable AI becomes, the more useful for specific tasks, the more the demand for human supervision grows. Despite automation capability, the need for control, validation, interpretation increases. AI creates value, but requires humans to give meaning to that value.</p>
+
+        <p>The most emblematic case is "mental deflation": <a href="https://fortissimo.substack.com/p/ff140-tutti-app-fluencers">if developing an idea will cost less tomorrow than today, what's the point of doing it now?</a> Gemini 3 lets you build apps, games and tools with a few prompts. Like going to the gym for twenty years and then seeing the industrial revolution arrive — except this time the muscle made superfluous is the brain. AI solves mathematical problems that have been open for thirty years (like Erdős problem #124): even the most brilliant professors wonder if it's worth continuing. The answer, probably, is that the perimeter of "worth it" changes — not its meaning.</p>
+
+        <h3 id="agents-openclaw">Agents that work while you sleep (OpenClaw)</h3>
+
+        <p>The leap from chatbots to <em>agents</em> isn't (just) a matter of model power: it's a matter of <strong>memory</strong> and <strong>action</strong>. A useful agent doesn't just respond: it maintains context, has goals, uses tools, works "in the background." In other words: it resembles a personal operating system more than a chat.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(<a href="https://fortissimo.substack.com/p/ff144-il-fischio-dellaragosta">🦞 ff.144.1 Returning from retirement at 40</a>)</div>
+            <p>"clawdbot (then moltbot, then OpenClaw) ... remembers everything ... thanks to 'its' system files ... [and] acts independently and proactively, 'working' while we sleep"</p>
+        </div>
+
+        <p>This form of automation is more powerful (and more ambiguous) than "AI that writes text." If an agent can work for hours, iterate, fail and correct itself, then productivity is no longer linear: it becomes a curve made of <em>delegations</em>, supervision and feedback loops.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(🦞 ff.144.2 — Delegations, supervision, feedback loops)</div>
+            <p>A useful mental model: the agent as <em>extended arm</em>. You provide direction and constraints (what's acceptable, what's forbidden, what's "good"); it explores paths, produces drafts, fails quickly and returns with options. Productivity doesn't grow in a straight line: it grows when you transform output into an ever-faster decision cycle.</p>
+        </div>
+
+        <h3 id="operational-robotics">From demo to factory: operational robotics</h3>
+
+        <p>Figure AI unveiled Helix 02, a second-generation Vision-Language-Action (VLA) model powering the new Figure 03 humanoid robot. The real breakthrough is <strong>Full-Body Autonomy</strong>: the robot no longer separates walking from hand use. This problem — called "loco-manipulation" — has been one of the hardest obstacles in robotics for years, because every action changes the balance of all others.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(<a href="https://www.figure.ai/news/helix-02" rel="noopener" target="_blank">📰 Figure AI — Helix 02 and loco-manipulation</a>)</div>
+            <p>"The robot no longer separates walking from hand use. This challenge of loco-manipulation — the ability for a robot to move and manipulate objects together — has been one of the hardest problems in robotics."</p>
+        </div>
+
+        <p>But the strongest signal comes from industrial production. CATL — the Chinese battery giant — has achieved the <a href="https://carnewschina.com/2025/12/18/catl-achieves-worlds-first-scale-deployment-of-embodied-ai-humanoid-robots-on-battery-production-lines/" rel="noopener" target="_blank">world's first scale deployment of "embodied AI" humanoid robots on battery production lines</a>. Not demos, not pilots: real production, real shifts, measurable throughput. This is the threshold where hype becomes accounting.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(🏭 corpus — Factory robots: CATL)</div>
+            <p>The transition from "viral videos" to "active production lines" marks a technology's maturity. When the CFO speaks before the CTO, the transition has happened.</p>
+        </div>
+
+        <p>HMND 01 completes 7-hour uninterrupted picking shifts: a time-lapse compresses hours of work into minutes, showing bin picking of metal bearing rings without errors. The trajectory is clear: from spectacular demo to silent operability. The next 24 months will define who dominates the industrial robotics market — and it won't necessarily be whoever has the most viral YouTube video.</p>
+
+        <h3 id="memory-bottleneck">The memory bottleneck</h3>
+
+        <p>Moore's Law has been dead for a long time. Instead of making transistors and circuits smaller, we've simply added more and more circuits and transistors by linking chips together. That's why we now have AI compute clusters with a million chips.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(<a href="https://youtu.be/UpPIK9Iifx0?si=vOQES-0PO53uEyzb" rel="noopener" target="_blank">🎬 Majestic Labs — Memory bottleneck in AI</a>)</div>
+            <p>"Moore's law died a long time ago. Instead of making transistors and circuits smaller, we've just added more and more circuits and transistors by linking chips together."</p>
+        </div>
+
+        <p>But there's another bottleneck the tech industry hasn't quite figured out: <strong>memory</strong>. Majestic Labs — a startup focused on this problem — proposes architectures that reduce dependence on high-latency memory. CEO Ofer Shacham argues that the next AI performance leap won't come from more powerful GPUs, but from faster, better-integrated memory.</p>
+
+        <p>It's a reminder that innovation isn't always "bigger" or "faster" in a linear way. Sometimes it's "smarter" in removing bottlenecks no one was watching. The human brain, with its 20 watts, remains the benchmark: the watt-per-operation ratio that the best AI chips achieve is still orders of magnitude worse.</p>
+
+        <h3 id="ai-music">AI that creates music (Suno and beyond)</h3>
+
+        <p>A chilling statistic for the music industry: <a href="https://www.billboard.com/pro/suno-creates-spotify-catalog-music-two-weeks-pitch-deck/" rel="noopener" target="_blank">Suno generates the equivalent of Spotify's entire catalog every two weeks</a>. According to a pitch deck for a 250 million dollar fundraise, the goal is to become a "verticalized" creation, social media and music streaming service.</p>
+
+        <div class="citation">
+            <div class="citation-ref">(🎵 corpus — Suno: volume vs value)</div>
+            <p>The question isn't "how much music can AI generate" — it's "how much music is worth listening to." Infinite volume at zero cost creates a new problem: curation becomes the bottleneck. Who filters matters more than who produces.</p>
+        </div>
+
+        <p>And then there's Xania Monet — the first known AI artist to earn enough radio airplay to debut on a Billboard chart. The woman behind Xania Monet says: "I look at her as a real person." The line between human artist and algorithmic generator is dissolving — and with it, our definitions of authenticity, creativity, intellectual property.</p>
+
+        <p>The paradox is evident: the more music is generated, the more precious the human filter that decides what deserves attention becomes. The curator — the editor, the DJ, the recommendation algorithm — becomes the real artist. Not who creates, but who chooses what to bring out of the noise.</p>
+
+        <h3 id="digital-privacy">The end of digital privacy</h3>
+
+        <div class="citation">
+            <div class="citation-ref">(🧠 ff.75.4 — Privacy as mental freedom)</div>
+            <p>When systems predict intentions, privacy is no longer just "data": it's autonomy. The boundary shifts from what you <em>have done</em> to what you <em>are about to do</em>. In a world of increasingly proactive agents and models, the question is: who can infer your goals, and who can <em>direct</em> them without you noticing?</p>
+        </div>
+
+        <p>Artificial intelligence also changes our understanding of privacy. Modern systems collect data in real time, analyze behaviors, predict intentions. It's no longer about "what we say" but "what we think," not "where we go" but "where we're about to go." The disturbing detail is that digital memory isn't as reliable as it seems: a huge part of the web simply vanishes, and with it disappear evidence, context, accountability.</p>
+
+        <p>Surveillance is no longer a technology — it's an infrastructure. Like electricity or water, it's always present, invisible, pervasive. But unlike other infrastructures, it doesn't just serve to facilitate life — it serves to understand us better than we understand ourselves.</p>
+
+        <div class="pullquote">"The future is not what happens to us — it's what we choose to create with the tools we have."</div>
+
+        <h3 id="democratization">The democratization of intelligence</h3>
+
+        <div class="citation">
+            <div class="citation-ref">(🌍 ff.44.2 — Access as justice)</div>
+            <p>Access to AI is the new inequality indicator. But "access" isn't just connection: it's the ability to formulate questions, interpret answers, transform output into action. Without critical literacy, accessible AI risks being a megaphone for those who already know how to speak.</p>
+        </div>
+
+        <p>The real revolution isn't that AI becomes more powerful — it's that it becomes more accessible. When a student in Africa can access the same level of artificial intelligence as a researcher at Stanford, inequalities redistribute.</p>
+
+        <p>But access isn't just technical — it's cognitive. We need to learn to formulate better questions, interpret complex answers, recognize limits and biases. The AI era requires new forms of literacy.</p>
+
+        <p>It's not just about using AI — it's about thinking with AI. About developing a form of augmented intelligence that combines human and artificial capabilities. A synergy, not a competition.</p>
+
+        <div class="toolbox">
+            <h4>🧰 Toolbox: Explore future technology</h4>
+            <p>Tools to experiment, learn and create:</p>
+            <ul>
+                <li><strong>Claude / ChatGPT / Perplexity</strong> — Conversational agents for brainstorming, research and problem-solving</li>
+                <li><strong>Midjourney / DALL-E / Stable Diffusion</strong> — Image generation to visualize ideas</li>
+                <li><strong>v0 / Bolt.new / Lovable</strong> — AI-assisted web development for rapid prototyping</li>
+                <li><strong>Cursor / Windsurf</strong> — AI-powered IDEs to program faster</li>
+                <li><strong>Notion AI / Obsidian</strong> — AI-enhanced second brain to organize thoughts</li>
+                <li><strong>Descript / ElevenLabs</strong> — Audio/video editing with synthetic voice</li>
+            </ul>
+            <p><em>The toolbox evolves with technology. Update the list regularly.</em></p>
+        </div>
+
+        <p>Technology is the language of the future, but humanity is the grammar. Without the first, we cannot express our ideas. Without the second, our ideas make no sense. The future is the poetry we write when the two meet.</p>
+
+        <p>When we look at what is emerging — artificial intelligence, robotics, augmented reality, cryptocurrencies — we see not just tools, but possibilities. Not just changes, but choices. Not just problems to solve, but visions to realize.</p>
+
+        <p>The future of technology is not determined — it's democratic. It's not inevitable — it's intentional. It's not given — it's built. And we are the builders.</p>
+
+        <p>The journey has just begun. The map is incomplete. But the road is under our feet, and every step counts.</p>
+
+        <div class="chapter-nav">
+            <a href="/" class="nav-link">← Back to index</a>
+            <a href="natura_en.html" class="nav-link next">Next chapter: Nature →</a>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
